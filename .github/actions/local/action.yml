@@ -1,0 +1,7 @@
+name: nested-actions-b-local
+description: Dummy local composite inside B, used by B's own action.yml through ./ (Q1 probe).
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "hello from B/local (resolved relative to B's repository)"
