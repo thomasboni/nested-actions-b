@@ -1,5 +1,5 @@
 name: nested-actions-b
-description: Dummy action that uses nested-actions-c and nested-actions-d, plus a local composite of its own.
+description: Dummy action that uses nested-actions-c and nested-actions-d.
 runs:
   using: composite
   steps:
@@ -7,4 +7,3 @@ runs:
       run: echo "hello from B (uses C and D)"
     - uses: thomasboni/nested-actions-c@main
     - uses: thomasboni/nested-actions-d@main
-    - uses: ./.github/actions/local
